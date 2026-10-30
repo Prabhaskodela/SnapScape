@@ -1,0 +1,1 @@
+// SnapScale interactions and image-search functionality will be added in the next project stage.
