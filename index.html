@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SnapScale turns a word into a wall of visual inspiration.">
+  <title>SnapScale — Find your visual spark</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="SnapScale home">
+      <span class="brand-mark" aria-hidden="true">S</span>
+      <span>snap<span class="brand-accent">scale</span></span>
+    </a>
+    <span class="header-note">A little inspiration goes a long way.</span>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <p class="eyebrow"><span class="eyebrow-dot"></span> YOUR NEXT IDEA STARTS HERE</p>
+      <h1 id="hero-title">See the world in <span>new ways.</span></h1>
+      <p class="hero-copy">One word can open a thousand windows. Search for something you love and get inspired.</p>
+
+      <form class="search-form" role="search">
+        <label class="visually-hidden" for="search-input">Search for an image</label>
+        <span class="search-icon" aria-hidden="true">⌕</span>
+        <input id="search-input" name="query" type="search" placeholder="Try “mountains”, “architecture”, “coffee”…" autocomplete="off">
+        <button id="search-button" type="submit">Explore <span aria-hidden="true">↗</span></button>
+      </form>
+
+      <div class="suggestions" aria-label="Search suggestions">
+        <span class="suggestions-label">TRY</span>
+        <button class="suggestion-chip" type="button">Minimal design</button>
+        <button class="suggestion-chip" type="button">Ocean</button>
+        <button class="suggestion-chip" type="button">Street photography</button>
+        <button class="suggestion-chip" type="button">Nature</button>
+      </div>
+    </section>
+
+    <section class="results-section" aria-live="polite" aria-labelledby="results-heading">
+      <div class="results-toolbar">
+        <div>
+          <p class="section-kicker">THE GALLERY</p>
+          <h2 id="results-heading">Your inspiration wall</h2>
+        </div>
+        <div class="results-actions">
+          <span id="result-count" class="result-count">Ready when you are</span>
+          <button id="clear-button" class="clear-button" type="button">Clear</button>
+        </div>
+      </div>
+
+      <div id="results-container" class="results-grid"></div>
+
+      <div id="empty-state" class="empty-state">
+        <div class="empty-art" aria-hidden="true"><span>✳</span><i></i><b></b></div>
+        <h3>A blank canvas, full of possibility.</h3>
+        <p>Enter a word above to start building your inspiration wall.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>SNAPSCALE</span>
+    <span>Collect moments. Find inspiration.</span>
+  </footer>
+</body>
+</html>
